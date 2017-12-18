@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCalendriersTable extends Migration
+class CreateImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreateCalendriersTable extends Migration
      */
     public function up()
     {
-        Schema::table('calendriers', function (Blueprint $table) {
-            //
+        Schema::create('images', function (Blueprint $table) {
+            $table->increments('id');
+            $table->timestamps();
+            $table->text('name');
+            $table->text('path');
         });
     }
 
@@ -25,7 +28,7 @@ class CreateCalendriersTable extends Migration
      */
     public function down()
     {
-        Schema::table('calendriers', function (Blueprint $table) {
+        Schema::dropIfExists('images', function (Blueprint $table) {
             //
         });
     }
