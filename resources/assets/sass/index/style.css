@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/***********************************************
+				VARIABLES
+***********************************************/
+/* colors */
+/* polices */
+/* tailles */
+/* extends */
+.navbar, .button-area .btn-try, .footer {
+  background: #eed8b4;
+  background: -moz-linear-gradient(top, #eed8b4 0%, #ae8647 0%, #b79054 19%, #bc975c 31%, #d5b888 75%, #e3caa1 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #eed8b4), color-stop(0%, #ae8647), color-stop(19%, #b79054), color-stop(31%, #bc975c), color-stop(75%, #d5b888), color-stop(100%, #e3caa1));
+  background: -webkit-linear-gradient(top, #eed8b4 0%, #ae8647 0%, #b79054 19%, #bc975c 31%, #d5b888 75%, #e3caa1 100%);
+  background: -o-linear-gradient(top, #eed8b4 0%, #ae8647 0%, #b79054 19%, #bc975c 31%, #d5b888 75%, #e3caa1 100%);
+  background: -ms-linear-gradient(top, #eed8b4 0%, #ae8647 0%, #b79054 19%, #bc975c 31%, #d5b888 75%, #e3caa1 100%);
+  background: linear-gradient(to bottom, #eed8b4 0%, #ae8647 0%, #b79054 19%, #bc975c 31%, #d5b888 75%, #e3caa1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eed8b4', endColorstr='#e3caa1', GradientType=0 ); }
+
+body {
+  background: #e2f9e5;
+  background: -moz-linear-gradient(left, #e2f9e5 0%, #e2f9e5 3%, #eff5f0 38%, #eff5f0 62%, #e2f9e5 98%, #e2f9e5 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #e2f9e5), color-stop(3%, #e2f9e5), color-stop(38%, #eff5f0), color-stop(62%, #eff5f0), color-stop(98%, #e2f9e5), color-stop(100%, #e2f9e5));
+  background: -webkit-linear-gradient(left, #e2f9e5 0%, #e2f9e5 3%, #eff5f0 38%, #eff5f0 62%, #e2f9e5 98%, #e2f9e5 100%);
+  background: -o-linear-gradient(left, #e2f9e5 0%, #e2f9e5 3%, #eff5f0 38%, #eff5f0 62%, #e2f9e5 98%, #e2f9e5 100%);
+  background: -ms-linear-gradient(left, #e2f9e5 0%, #e2f9e5 3%, #eff5f0 38%, #eff5f0 62%, #e2f9e5 98%, #e2f9e5 100%);
+  background: linear-gradient(to right, #e2f9e5 0%, #e2f9e5 3%, #eff5f0 38%, #eff5f0 62%, #e2f9e5 98%, #e2f9e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f9e5', endColorstr='#e2f9e5', GradientType=1 ); }
+
+/***********************************************
+				MIXINS
+***********************************************/
+/*avec animation*/
+/* avec border-radius*/
+/*
+.[name_of-class] { @include radius(10px); }
+*/
+/*avec box-shadow*/
+/*avec les transitions*/
+/* NAVBAR */
+/*background-color: rgba(238,216,180,1);
+background: @include filter-gradient(#eed8b4, #bc975c, vertical);
+background: @include background-image(linear-gradient(top, rgba(238,216,180,1) 0%, rgba(174,134,71,1) 0%, rgba(183,144,84,1) 19%, rgba(188,151,92,1) 31%, rgba(213,184,136,1) 75%, rgba(227,202,161,1) 100%));
+*/
+.navbar {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+  .navbar .navbar-header {
+    padding: 7px; }
+    .navbar .navbar-header a {
+      color: #FCF8F2;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem; }
+      .navbar .navbar-header a:hover {
+        color: #FCF8F2; }
+  .navbar .liens li {
+    padding: 7px; }
+    .navbar .liens li a {
+      color: #FCF8F2; }
+      .navbar .liens li a:hover {
+        color: #FCF8F2; }
+    .navbar .liens li:hover {
+      background-color: rgba(89, 53, 53, 0.7);
+      transition: all 0.3s ease-in-out; }
+
+.header {
+  margin-top: 40px;
+  text-align: center; }
+  .header .title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem; }
+  .header .subtitle {
+    font-family: 'Marck Script', cursive;
+    font-size: 1.8rem;
+    padding: 25px 0; }
+
+.carousel-caption .title-carousel {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 4px 2px 2px black; }
+.carousel-caption .subtitle-carousel {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.9rem;
+  text-shadow: 4px 2px 2px black; }
+
+.button-area {
+  text-align: center; }
+  .button-area .presentation {
+    font-family: "Cormorant Garamond", serif; }
+  .button-area p {
+    font-family: "Cormorant Garamond", serif;
+    text-align: justify; }
+  .button-area .btn-try {
+    color: #FCF8F2; }
+    .button-area .btn-try a {
+      color: #FCF8F2; }
+    .button-area .btn-try:hover {
+      background-color: rgba(89, 53, 53, 0.7);
+      transition: all 0.3s ease-in-out; }
+
+.footer {
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 70px;
+  padding: 20px;
+  text-align: center; }
+
+/*
+Modifier la taille du carousel 
+texte sur le cot├® avec descriptif + bouton cliquable et lien vers la page de test 
+animation ???
+*/
+
+/*# sourceMappingURL=style.css.map */

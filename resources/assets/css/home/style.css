@@ -1,0 +1,89 @@
+/***********************************************
+				VARIABLES
+***********************************************/
+/* colors */
+/* polices */
+/* tailles */
+/* extends */
+.navbar, .footer {
+  background: #eed8b4;
+  background: -moz-linear-gradient(top, #eed8b4 0%, #ae8647 0%, #b79054 19%, #bc975c 31%, #d5b888 75%, #e3caa1 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #eed8b4), color-stop(0%, #ae8647), color-stop(19%, #b79054), color-stop(31%, #bc975c), color-stop(75%, #d5b888), color-stop(100%, #e3caa1));
+  background: -webkit-linear-gradient(top, #eed8b4 0%, #ae8647 0%, #b79054 19%, #bc975c 31%, #d5b888 75%, #e3caa1 100%);
+  background: -o-linear-gradient(top, #eed8b4 0%, #ae8647 0%, #b79054 19%, #bc975c 31%, #d5b888 75%, #e3caa1 100%);
+  background: -ms-linear-gradient(top, #eed8b4 0%, #ae8647 0%, #b79054 19%, #bc975c 31%, #d5b888 75%, #e3caa1 100%);
+  background: linear-gradient(to bottom, #eed8b4 0%, #ae8647 0%, #b79054 19%, #bc975c 31%, #d5b888 75%, #e3caa1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eed8b4', endColorstr='#e3caa1', GradientType=0 ); }
+
+body {
+  background: #e2f9e5;
+  background: -moz-linear-gradient(left, #e2f9e5 0%, #e2f9e5 3%, #eff5f0 38%, #eff5f0 62%, #e2f9e5 98%, #e2f9e5 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #e2f9e5), color-stop(3%, #e2f9e5), color-stop(38%, #eff5f0), color-stop(62%, #eff5f0), color-stop(98%, #e2f9e5), color-stop(100%, #e2f9e5));
+  background: -webkit-linear-gradient(left, #e2f9e5 0%, #e2f9e5 3%, #eff5f0 38%, #eff5f0 62%, #e2f9e5 98%, #e2f9e5 100%);
+  background: -o-linear-gradient(left, #e2f9e5 0%, #e2f9e5 3%, #eff5f0 38%, #eff5f0 62%, #e2f9e5 98%, #e2f9e5 100%);
+  background: -ms-linear-gradient(left, #e2f9e5 0%, #e2f9e5 3%, #eff5f0 38%, #eff5f0 62%, #e2f9e5 98%, #e2f9e5 100%);
+  background: linear-gradient(to right, #e2f9e5 0%, #e2f9e5 3%, #eff5f0 38%, #eff5f0 62%, #e2f9e5 98%, #e2f9e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f9e5', endColorstr='#e2f9e5', GradientType=1 ); }
+
+/***********************************************
+				MIXINS
+***********************************************/
+/*avec animation*/
+/* avec border-radius*/
+/*
+.[name_of-class] { @include radius(10px); }
+*/
+/*avec box-shadow*/
+/*avec les transitions*/
+/* NAVBAR */
+.navbar {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+  .navbar .navbar-header {
+    padding: 7px; }
+    .navbar .navbar-header a {
+      color: #FCF8F2;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem; }
+      .navbar .navbar-header a:hover {
+        color: #FCF8F2; }
+  .navbar .liens li {
+    padding: 7px; }
+    .navbar .liens li a {
+      color: #FCF8F2; }
+      .navbar .liens li a:hover {
+        color: #FCF8F2; }
+    .navbar .liens li:hover {
+      background-color: rgba(89, 53, 53, 0.7);
+      transition: all 0.3s ease-in-out; }
+
+.title2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.8rem;
+  text-align: center; }
+
+.bloc-letter1 {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif; }
+  .bloc-letter1 img {
+    margin: 0;
+    cursor: pointer; }
+
+.lettre {
+  height: 120px;
+  width: 120px;
+  margin: 0 40px 40px 0; }
+
+.inactif {
+  display: none; }
+
+.footer {
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 70px;
+  padding: 20px;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

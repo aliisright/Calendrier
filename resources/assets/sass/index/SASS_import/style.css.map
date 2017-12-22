@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,6DAA6D;AACrD,uBAAY;ACDpB;;gDAEgD;AAGhD;;gDAEgD;AAChD,kBAAkB;AAQlB,uBAAuB;AAQvB;;EAEE;AAEF,mBAAmB;AAQnB,wBAAwB",
+"sources": ["style.scss","_MainMixins.scss"],
+"names": [],
+"file": "style.css"
+}

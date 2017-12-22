@@ -1,0 +1,79 @@
+@import '_MainMixins.scss';
+
+/* NAVBAR */
+body {
+	@extend %linear-gradient-green;
+}
+.navbar {
+	@extend %linear-gradient;
+	border: none;
+	@include radius(0);
+
+	.navbar-header {
+		padding: $xs-px;
+		a {
+			color: $blanc;
+			font-family: 'Cormorant Garamond', serif;
+			font-size: 2.5rem;
+			&:hover {
+				color: $blanc;
+			}
+		}
+	}
+
+	.liens {
+		li  {
+			padding: $xs-px;
+			a {
+				color: $blanc;
+				&:hover {
+					color: $blanc;
+				}
+			}
+			&:hover {
+				background-color: $marron;
+				transition: all .3s ease-in-out ;
+			}
+		}
+	}
+
+}
+
+.title2 {
+	font-family: $cormorant;
+	font-size: 2.8rem;
+	text-align: center;
+}
+
+.bloc-letter1 {
+	text-align: center;
+	font-family: $cormorant;
+	img {
+		margin: 0;
+		cursor: pointer;
+	}
+	
+}
+
+.lettre {
+	height: 120px;
+	width: 120px;
+	margin: 0 40px 40px 0;
+	&:hover {
+
+	}
+}
+
+.inactif {
+	display: none;
+}
+
+
+
+.footer {
+	@extend %linear-gradient;
+	font-family: $cormorant;
+	margin-top: 70px;
+	padding: 20px;
+	text-align: center;
+}
